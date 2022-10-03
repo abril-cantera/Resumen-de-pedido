@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./Estilos/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container-primary">
+      <div class="container-secondary">
+        <section class="container-img-secondary">
+          <img src="./Imagenes/illustration-hero.svg" alt="" />
+        </section>
+        <div class="container-container-principal">
+          <section class="container-text-principal">
+            <h2>Order Summary</h2>
+            <p>
+              You can now listen to millions of song, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </section>
+          <div class="container-container-plan">
+            <section class="container-plan">
+              <section class="container-img-price">
+                <img src="./Imagenes/icon-music.svg" alt="" />
+                <section class="container-plan__price">
+                  <h4>Annual Plan</h4>
+                  <h5>$59.99/year</h5>
+                </section>
+              </section>
+              <a class="change" href="">Change</a>
+            </section>
+          </div>
+          <div class="container-btn-cancel">
+            <button id="button-proceed">Proceed to Payment</button>
+            <a class="cancel" href="">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+      <lord-icon
+        class="icono-music"
+        src="https://cdn.lordicon.com/kwsfrmbv.json"
+        trigger="loop"
+        colors="outline:#2516c7,primary:#2516c7"
+        scale="70"
+        style="width: 450px; height: 450px"
+      >
+      </lord-icon>
+      <div class="container-form inactive" id="form">
+        <form action="">
+          <section class="container-icon">
+            <i id="icon" class="fa-regular fa-circle-xmark"></i>
+          </section>
+          <h2>Complete el formulario para continuar su pedido</h2>
+          <input id="nombre" type="text" placeholder="Nombre" />
+          <input id="apellido" type="text" placeholder="Apellido" />
+          <button type="button" id="button">Send</button>
+        </form>
+      </div>
+    </main>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

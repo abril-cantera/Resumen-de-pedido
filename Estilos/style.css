@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --pale-blue: #e0e8ff;
+  --azul-marino: #3829e0;
+  --blanco: #f5f7ff;
+  --azul-opaco-pastel: #7280a7;
+  --azul-oscuro-negro: #1f2f56;
+  --color-fonts: rgb(169, 165, 165);
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+}
+.inactive {
+  display: none;
+}
+.container-primary {
+  background-image: url("./Imagenes/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-secondary {
+  width: 80%;
+  height: 82vh;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.container-secondary .container-img-secondary img {
+  height: 23vh;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.container-container-principal {
+  text-align: center;
+  margin-top: 20px;
+}
+.icono-music {
+  display: none;
+}
+.container-text-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-text-principal h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.container-text-principal p {
+  font-weight: 700;
+  color: rgb(169, 165, 165);
+  line-height: 20px;
+  font-size: 1.1rem;
+  width: 188px;
+}
+.container-container-plan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  height: 63px;
+  background-color: rgba(207, 207, 225, 0.113);
+  border-radius: 8px;
+  padding: 0 15px;
+  margin: 15px 0;
+}
+.container-img-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-plan__price {
+  padding-left: 10px;
+}
+.container-plan__price h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.container-plan__price h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-fonts);
+}
+.container-plan .change {
+  color: var(--azul-marino);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.container-btn-cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-container-principal .container-btn-cancel button {
+  height: 45px;
+  width: 87%;
+  border: none;
+  border-radius: 8px;
+  margin: 1rem 0;
+  background-color: var(--azul-marino);
+  font-weight: 700;
+  color: white;
+  font-size: 1.3rem;
+  box-shadow: 0px 9px 30px -1px rgba(56, 41, 224, 0.46);
+}
+.container-container-principal .container-btn-cancel .cancel {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--color-fonts);
+  margin-top: 20px;
+}
+/* Form */
+.container-form {
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+.container-icon i {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+.container-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-form form h2 {
+  text-align: center;
+  margin: 15px 10px;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+.container-form form input {
+  margin: 2rem;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--pale-blue);
+  padding-left: 5px;
+}
+.container-form form button {
+  margin: 1.5rem 0;
+  height: 35px;
+  width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.483);
+  border-radius: 10px;
+}
+
+/*MediaQuery*/
+@media (min-width: 425px) {
+  .container-primary {
+    background-image: url("./Imagenes/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .container-secondary {
+    max-width: 335px;
+  }
+  .container-text-principal p {
+    width: 210px;
+    max-width: 210px;
+  }
+  .container-plan {
+    width: 275px;
+  }
+  .container-container-principal .container-btn-cancel button {
+    width: 280px;
+  }
+  .container-form {
+    width: 335px;
+  }
+}
+@media (min-width: 768px) {
+  .container-secondary {
+    position: absolute;
+    right: 54%;
+    height: auto;
+  }
+  .icono-music {
+    display: block;
+    position: absolute;
+    left: 55%;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5));
+  }
+  .container-text-principal p {
+    font-size: 1.3rem;
+    max-width: 355px;
+    width: 290px;
+  }
+  .container-plan {
+    height: 80px;
+  }
+  .container-plan__price h4 {
+    font-size: 1.3rem;
+  }
+  .container-plan__price h5 {
+    font-size: 1.1rem;
+  }
+  .container-container-principal .container-btn-cancel .cancel {
+    margin: 15px 0;
+  }
+  .container-form {
+    left: 54%;
+  }
+}
