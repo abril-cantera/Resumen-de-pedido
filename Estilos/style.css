@@ -28,14 +28,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 .container-secondary {
   width: 80%;
   height: auto;
   background-color: white;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 55px;
 }
 .container-secondary .container-img-secondary img {
   height: 23vh;
@@ -198,6 +198,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .container-primary {
+    height: 100vh;
+  }
   .container-secondary {
     position: absolute;
     right: 54%;
