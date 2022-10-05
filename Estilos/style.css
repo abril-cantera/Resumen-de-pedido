@@ -32,7 +32,7 @@ body {
 }
 .container-secondary {
   width: 80%;
-  height: 82vh;
+  height: auto;
   background-color: white;
   border-radius: 15px;
   margin-top: 30px;
@@ -130,7 +130,7 @@ body {
   text-decoration: none;
   font-weight: 900;
   color: var(--color-fonts);
-  margin-top: 20px;
+  margin: 25px 0;
 }
 /* Form */
 .container-form {
