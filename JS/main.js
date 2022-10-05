@@ -5,6 +5,7 @@ const btnSend = document.getElementById("button");
 const $name = document.getElementById("nombre");
 const $lastName = document.getElementById("apellido");
 
+
 btnProceed.addEventListener("click", openForm);
 icon.addEventListener("click", openForm);
 btnSend.addEventListener("click", sendForm);
